@@ -720,6 +720,9 @@ footer {
   .become {
   top: 20%;
 }
+.tab-content {
+  flex-wrap: nowrap;
+}
 .about-title {
   font-size: 20px;
 }
@@ -734,9 +737,6 @@ footer {
   width: 120px;
 }
 
-#navbarNav > ul > li:nth-child(3) {
-  padding: 10px 0;
-}
 
 }
 
