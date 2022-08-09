@@ -1,0 +1,962 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+:root {
+ /*  colors */
+ --maroon-chamoy: #702E3D;
+ --black-chamoy: #030000;
+ --gray-chamoy: #84888B;
+ --white-chamoy: #FFFFFF;
+ --yellow-chamoy: #FEE61B;
+ --red-light-chamoy: #C12D66;
+ --blue-light-chamoy: #009ADE;
+/* fonts */ 
+--font-family-title: 'Oswald', sans-serif;
+--font-family-p: 'Arial', sans-serif;
+/* Size Fonts */
+--font-bottons: 20px;
+--font-title-h1: 42px;
+--font-title-h2: 36px;
+
+
+}
+.col-md-4, .col-md-8, .col-sm-6 {
+  padding: 0;
+}
+.container-fluid {
+  padding: 0;
+}
+.navbar {
+  background-image: url('./assets/tamusa-nav-bg.png');
+  height: 100px;
+}
+
+.navbar-brand {
+  margin-left: 10%;
+
+}
+.navbar-brand-img {
+  width: 208px;
+  height: 52px;
+}
+
+.nav-link {
+  font-family: var(--font-family-title);
+  color: var(--white-chamoy);
+  font-style: normal;
+font-weight: 500;
+font-size: var(--font-bottons);
+line-height: 125%;
+  margin: 0 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--white-chamoy);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--white-chamoy);
+}
+
+#navbarNav > ul > li:nth-child(3) > a {
+  color: var(--maroon-chamoy);
+}
+
+.navbar-collapse {
+  background-image: url('./assets/tamusa-nav-bg.png');
+  margin-top: 15px;
+  padding: 10px;
+  z-index: 99;
+}
+
+.nav-bar-mobile {
+  display:block;
+}
+.nav-bar-desktop {
+  display: none;
+}
+
+.btn {
+  border-radius: 0%;
+}
+
+.btn-light {
+  font-family: var(--font-family-title);
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 125%;
+border-color: transparent;
+}
+
+.hero-banner {
+  width: 100%;
+}
+.become {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+}
+.hero-banner-h1 {
+  position: relative;
+}
+.hero-banner-img img {
+  width: 100%;
+}
+.hero-banner-h1 {
+  background-image: url(./assets/hero/baj-header-brush-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+.hero-banner-h1 h1 {
+  padding: 25px 0 25px 51px;
+  font-family: var(--font-family-title);
+  font-weight: 500;
+  color: var(--white-chamoy);
+  font-size: 48px;
+
+}
+
+.header-ribbon {
+  background-image: url('./assets/tamusa-ribbon-bg.png');
+}
+.ribbon {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-ribbon-title, .header-ribbon-button {
+  padding: 0 10px;
+}
+
+.header-ribbon-title {
+  width: 60%;
+}
+
+.header-ribbon-title h2 {
+  font-family: var(--font-family-title);
+  color: var(--white-chamoy);
+font-style: normal;
+font-weight: 500;
+font-size: var(--font-title-h2);
+line-height: 125%;
+}
+body > header > div.header-ribbon > div.header-ribbon-button > button {
+  font-family: var(--font-family-title);
+  color: var(--black-chamoy);
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 125%;
+
+}
+
+.about-video {
+  background-image: url('./assets/tamusa-baj-videobg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  position: relative;
+
+}
+
+.about-video iframe {
+  width: 100%;
+  height: 450px;
+  padding: 20px 25px 15px 29px;
+}
+.paying-video iframe {
+  width: 100%;
+  height: 450px;
+}
+
+.play-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.paying-video iframe {
+    width: 100%;
+    height: 450px;
+}
+
+
+.about-title, .paying-title {
+    font-family: var(--font-family-title);
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-title-h2);
+    line-height: 100%;
+    padding: 20px;
+}
+
+.about-content, .paying-content {
+  font-family: var(--font-family-p);
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 125%;
+    padding: 20px;
+}
+
+.paying-btn {
+  padding: 20px;
+}
+
+.stats {
+  font-family: var(--font-family-title);
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 125%;
+color: var(--maroon-chamoy);
+padding: 40px 30px;
+}
+.col-small  {
+  margin: 0;
+  padding: 0;
+}
+
+body > main > section.about.container > div.row.row-cols-3.justify-content-center.align-content-center > div > div > div.col-sm-12.col-md-4 {
+  align-items: center;
+}
+
+.stats img {
+  width: 80px;
+  text-align: center;
+}
+
+.stats h3 {
+  width: 50%;
+    margin: 0 auto;
+}
+.about-icons, .about-icons-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+}
+.about-icons {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.about-icons-content {
+  justify-content: center;
+  padding: 40px 0;
+  width: 30%;
+}
+
+
+body > main > section.about.container > div.row.row-cols-3.justify-content-center.align-content-center {
+  width: 100%;
+  max-width: 1080px;
+  margin: 50px auto;
+}
+
+.students h4 {
+  font-family: var(--font-family-title);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  color: var(--black-chamoy)
+
+}
+
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.glide__slide {
+  border: 1px solid black;
+  line-height: 100px;
+  margin: 0;
+  text-align: center;
+}
+
+.card {
+  border-radius: 0;
+}
+
+.students-target .col-md-6 {
+  padding: 0;
+}
+.students-target img {
+  width: 100%;
+}
+.card-first-year {
+  width: 100%;
+  height: 100%;
+  background-color: var(--maroon-chamoy);
+}
+.card-students {
+  width: 100%;
+  height: 100%;
+  background-color: var(--gray-chamoy)
+}
+
+.card-graduate {
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-chamoy)
+}
+.card-parents {
+  width: 100%;
+  height: 100%;
+  background-color: var(--maroon-chamoy);
+}
+.card-body {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.card-title {
+  font-family: var(--font-family-title);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
+  color: var(--white-chamoy)
+}
+
+.card-text a {
+font-family: var(--font-family-p);
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 125%;
+color: var(--white-chamoy);
+text-decoration: none;
+}
+
+.card-body .btn {
+  width: 135px;
+  font-family: 'Oswald';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 125%;
+}
+
+.card-btn, .card-students-text {
+  margin: 0;
+
+}
+
+.about, .passion, .paying, .visits, .live, .students-target {
+  padding: 75px 0 10px 0 ;
+}
+
+.passion-bg {
+  background-image: url('./assets/tamusa-baj-tabmenu-bg\ 1.png');
+  background-size: 100% 100%;
+}
+.passion h4 {
+  font-family: var(--font-family-title);
+  font-style: normal;
+font-weight: 500;
+font-size: var(--font-title-h2);
+line-height: 47px;
+text-align: center;
+}
+
+.passion .nav-link {
+  font-family: var(--font-family-title);
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 125%;
+color: var(--white-chamoy);
+background-color: var(--gray-chamoy);
+width: 100%;
+padding-top: 25px;
+padding-bottom: 25px;
+border-radius: 0;
+margin: 0;
+border: 2px solid white;
+}
+
+.passion .nav-item {
+  margin: auto;
+  width: 25%;
+}
+.passion .nav-link {
+  height: 100px;
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+background: #FFFFFF;
+}
+
+#myTabContent {
+  border: 1px solid #D8D8D8;
+  margin: 0;
+}
+
+.tab-pane {
+  width: 100%;
+}
+
+.tab-content .college {
+  padding: 50px;
+}
+
+.tab-content p {
+  font-family: var(--font-family-p);
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+color: var(--black-chamoy);
+margin: 0;
+}
+
+.tab-content-view {
+  font-family: var(--font-family-title);
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 125%;
+margin: 0 auto;
+text-align: center;
+background-color: var(--white-chamoy);
+padding: 25px 0;
+}
+
+
+.tab-content-view a {
+color: var(--maroon-chamoy);
+text-decoration: underline;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  background-color: var(--maroon-chamoy);
+  color: var(--white-chamoy);
+}
+.admitted-content {
+  background-image: url('./assets/photos/tamusa-baj-students-cta.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+
+}
+.banner-footer {
+  background-image: url('./assets/photos/tamusa-cyn-cta.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  object-fit: cover;
+}
+.admitted-content h4, .banner-footer h4 {
+font-family: var(--font-family-title);
+margin: 25px auto;
+font-style: normal;
+font-size: var(--font-title-h2);
+color: var(--white-chamoy);
+
+}
+.admitted-content p {
+  margin-top: 25px;
+  font-family: var(--font-family-p);
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 125%;
+display: flex;
+align-items: center;
+text-align: center;
+color: var(--white-chamoy)
+}
+
+
+.cost-content {
+  background-image: url('./assets/cost/tamusa-baj-cost-cta-bg-1920.png');
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cost img {
+  width: 200px;
+
+}
+
+.cost-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 920px;
+  min-width: 320px;
+  margin-top: 30px;
+}
+.cost-content h4 {
+  font-family: var(--font-family-title);
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 47px;
+align-items: center;
+text-align: center;
+color: var(--black-chamoy);
+margin-top: 20px;
+}
+.cost-content p {
+  font-family: var(--font-family-title);
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 42px;
+display: flex;
+align-items: center;
+text-align: center;
+color: var(--black-chamoy);
+margin: 0;
+}
+
+.cost-cta {
+  padding-bottom: 60px;
+}
+
+.cost-cta a, .banner-footer-cta a, .admitted-content a, .banner-footer a, .paying a {
+  background-color: var(--maroon-chamoy);
+  font-family: var(--font-family-title);
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 125%;
+color: var(--white-chamoy);
+margin-top: 25px;
+padding: 10px 20px;
+border-color: none;
+}
+
+.visits h4, .live h4 {
+  font-family: var(--font-family-title);
+font-style: normal;
+font-weight: 500;
+font-size: var(--font-title-h2);
+line-height: 47px;
+align-items: center;
+text-align: center;
+color: var(--black-chamoy);
+}
+
+.live h4 {
+  margin-bottom: 50px;
+}
+
+.visits p {
+  font-family: var(--font-family-p);
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 125%;
+text-align: center;
+color: var(--black-chamoy);
+margin: 20px 0;
+}
+
+.visits-links, .live-links, .testimonials-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 320px;
+}
+
+.testimonials h4 {
+  padding-bottom: 20px;
+  font-family: 'Oswald';
+font-style: normal;
+font-weight: 500;
+font-size: var(--font-title-h2);
+line-height: 100%;
+color: var(--black-chamoy)
+}
+
+.testimonials-bg {
+  position: relative;
+}
+
+.testimonials-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 100px 50px;
+  margin: 0 auto;
+  font-family: var(--font-family-p);
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 125%;
+color: var(--white-chamoy);
+}
+
+
+.visits-links img {
+  width: 95%;
+  margin: 0;
+}
+
+.live-links img, .testimonials-links img {
+  width: 100%;
+  margin: 0;
+}
+
+.visits-links a {
+  margin: 0;
+}
+[class*=" imghvr-"], [class^=imghvr-] {
+  background-color: transparent;
+}
+
+[class*=" imghvr-"],
+    [class*=" imghvr-"] *,
+    [class*=" imghvr-"]:after,
+    [class*=" imghvr-"] :after,
+    [class*=" imghvr-"]:before,
+    [class*=" imghvr-"] :before,
+    [class^=imghvr-],
+    [class^=imghvr-] *,
+    [class^=imghvr-]:after,
+    [class^=imghvr-] :after,
+    [class^=imghvr-]:before,
+    [class^=imghvr-] :before {
+    box-sizing: border-box;
+    transition: all .35s 1s;
+    }
+
+.banner-footer-social a {
+  background-color: transparent;
+}
+
+.banner-footer-social img {
+  margin: 25px;
+}
+
+footer {
+  background-image: url('./assets/tamusa-footer-bg-1.png');
+  background-size: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%
+}
+
+.info-footer p {
+  color: var(--white-chamoy);
+  text-align: left;
+  margin: 0;
+}
+
+.info-img img {
+  width: 100%;
+  max-width: 200px;
+  padding: 20px;
+}
+
+.info-footer-2 p {
+  color: var(--white-chamoy);
+  text-align: right;
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.banner-footer-social a {
+  text-decoration: none;
+}
+@media (min-width: 1024px) and (max-width: 1200px)  {
+
+  .hero-banner-h1 {
+    width: 33%;
+  }
+  .hero-banner-h1 h1 {
+    font-size: 40px;
+    padding: 15px 0 15px 50px;
+  }
+  .about-video iframe, .paying-video iframe  {
+    height: 375px;
+}
+  .become {
+  top: 20%;
+}
+.about-title {
+  font-size: 20px;
+}
+.about-content {
+  font-size: 14px;
+}
+
+.card-text {
+  margin: 0;
+}
+.cost img {
+  width: 120px;
+}
+
+#navbarNav > ul > li:nth-child(3) {
+  padding: 10px 0;
+}
+
+}
+
+@media (max-width: 992px) {
+
+  
+#navbarNav > ul > li:nth-child(3) {
+  padding: 10px 0;
+}
+
+  .hero-banner-h1 {
+    width: 33%;
+  }
+  .hero-banner-h1 h1 {
+    font-size: 15px;
+    padding: 15px 0 5px 10px;
+  }
+  .become {
+  top: 20%;
+}
+
+  body > main > section.about.container > div:nth-child(3) {
+    padding-top: 0;
+  }
+
+  .stats img {
+    width: 75px;
+}
+
+.about-icons-content {
+  width: 100%;
+}
+.about-video iframe {
+  width: 100%;
+  height: 240px;
+
+}
+.card-title {
+  font-size: 12px;
+  margin: 0;
+}
+
+.card-text a {
+  font-size: 10px;
+  margin: 0;
+
+}
+.card-btn {
+  margin-top: 15px;
+}
+
+.card-text {
+  margin: 0;
+}
+
+.card-body .btn {
+  width: 70px;
+  font-size: 11px;
+}
+.card-btn, .card-students-text {
+  padding: 15px 0;
+}
+.passion h4, .students h4, .visits h4, .live h4 {
+  font-size: 36px;
+} 
+
+.students-target img {
+  height: 100%;
+  object-fit: cover;
+}
+.passion-bg {
+  background-image: none;
+}
+
+.tab-content {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  background: #FFFFFF;
+  text-align: center;
+}
+.tab-content .college {
+  padding: 10px 50px;
+}
+.passion .nav-item {
+  width: 100%;
+}
+
+.admitted-content {
+  padding: 30px;
+  background-size: 200% 100%;
+  object-fit: cover;
+}
+
+.banner-footer {
+  padding: 0px;
+  background-size: 100% 100%;
+  object-fit: cover;
+  
+}
+
+.admitted-content h4, .banner-footer h4 {
+  font-size: 12px;
+}
+
+.admitted-content p, .banner-footer p {
+  font-size: 10px;
+
+}
+
+.paying-video iframe {
+  width: 100%;
+  height: 250px;
+  padding: 0px 20px;
+}
+
+.paying-col {
+  padding: 0;
+}
+
+.paying a {
+  margin-top: 0;
+}
+.paying-btn {
+  padding-top: 0px;
+}
+.cost-content {
+  padding: 0;
+}
+.cost img {
+  width: 120px;
+}
+
+.cost-content p {
+  font-size: 18px;
+}
+
+.cost-cta, .banner-footer-cta {
+  text-align: center;
+}
+.visits-links, .live-links, .testimonials-links {
+  flex-wrap: wrap;
+}
+
+.visits-links img {
+  width: 320px
+}
+.live-links img {
+  width: 320px
+}
+
+
+.info-footer p, .info-footer-2 p {
+  text-align: center;
+}
+
+.glider-slide img {
+  width: 100%;
+}
+
+footer {
+  background-repeat: repeat;
+}
+.footer {
+  flex-direction: column;
+  padding: 50px;
+}
+}
+@media (min-width: 1320px) {
+
+  .nav-bar-mobile {
+    display: none;
+  }
+  .nav-bar-desktop {
+    display:block;
+  }
+
+  .navbar-nav {
+    margin-right: 10%;
+  }
+  
+
+  .hero-banner-tamusa img {
+    width: 515px;
+    }
+    .hero-banner-tamusa {
+      position: absolute;
+      top: 0;
+      padding-top: 270px;
+      padding-left: 165px;
+    }
+    .hero-banner-title h1 {
+      padding-top: 185px;
+      padding-left: 185px;
+    }
+
+  .hero-banner-title {
+    position: absolute;
+    width: 600px;
+    height: 94px;
+    left: 0;
+    font-family: var(--font-family-title);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 100%;
+    color: var(--white-chamoy);
+    padding-top: 120px;
+    padding-left: 78px;
+  }
+
+  .hero-banner-title h1 {
+    font-size: 58px;
+    }
+
+    .about {
+      padding: 75px 0;
+    }
+
+   
+    body > main > section.about.container > div > div.col-sm-12.col-md-4, body > main > section.about.container > div > div.col-sm-12.col-md-6 {
+      margin: 0;
+    }
+}
+
