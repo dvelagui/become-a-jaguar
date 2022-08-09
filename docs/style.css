@@ -839,10 +839,10 @@ footer {
 }
 
 .banner-footer {
-  padding: 0px;
-  background-size: 100% 100%;
-  object-fit: cover;
-  
+  padding: 0;
+    background-size: 200% 100%;
+    object-fit: cover;
+    background-position: center;
 }
 
 .admitted-content h4, .banner-footer h4 {
