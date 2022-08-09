@@ -711,6 +711,9 @@ footer {
     font-size: 40px;
     padding: 15px 0 15px 50px;
   }
+  .header-ribbon-title h2 {
+    font-size: 24px;
+  }
   .about-video iframe, .paying-video iframe  {
     height: 375px;
 }
@@ -750,6 +753,9 @@ footer {
   .hero-banner-h1 h1 {
     font-size: 15px;
     padding: 15px 0 5px 10px;
+  }
+  .header-ribbon-title h2 {
+    font-size: 24px;
   }
   .become {
   top: 20%;
