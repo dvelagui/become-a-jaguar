@@ -588,7 +588,7 @@ margin: 20px 0;
 
 .visits-links, .live-links, .testimonials-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   min-width: 320px;
 }
