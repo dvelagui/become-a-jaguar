@@ -771,6 +771,9 @@ footer {
   height: 240px;
 
 }
+.testimonials-text {
+  font-size: 18px;
+}
 .card-title {
   font-size: 12px;
   margin: 0;
@@ -875,12 +878,15 @@ footer {
 .cost-cta, .banner-footer-cta {
   text-align: center;
 }
+.testimonials-links {
+  justify-content: center;
+}
 .visits-links, .live-links, .testimonials-links {
   flex-wrap: wrap;
 }
 
 .visits-links img {
-  width: 320px
+  width: 320px;
 }
 .live-links img {
   width: 320px
