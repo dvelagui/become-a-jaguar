@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="">
+	<meta name="description" content="">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css"
-    integrity="sha512-SYBBAnJsPEzSQ/kBqkR/9krJ+EUgF624c8uaMBww1Q26pnCw5k7zVmtc48BfXjZ9MRNNBveIdhx/na1xRLWgjw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./style.css">
+	<script src="scripts/custom.js"></script>
+  <link rel="stylesheet" href="./styles/style.css">
   <title>Become A Jaguar Today</title>
 </head>
 
@@ -34,10 +34,10 @@
                 Campus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.tamusa.edu/visit-campus/" target="_blank">Request Info</a>
+              <a class="nav-link" href="https://rfi.admissions.tamusa.edu" target="_blank">Request Info</a>
             </li>
             <li class="nav-item">
-              <a href="https://www.tamusa.edu/apply-now.html?utm_source=admissions&utm_medium=website&utm_campaign=admission-site"
+              <a href="https://apply.tamusa.edu"
                 target="_blank" class="nav-link btn btn-light">Apply Now</a>
             </li>
           </ul>
@@ -55,16 +55,14 @@
           <div class="col-3"></div>
         </div>
         <div class="hero-banner-img">
-          <img src="./assets/hero/tamusa-baj-header.jpg" alt="Become A Jaguar Today">
+          <img src="./assets/hero/tamusa-baj-header-1920.png" alt="Become A Jaguar Today">
         </div>
       </div>
       <div class="header-ribbon">
         <div class="container ribbon">
           <div class="col header-ribbon-title">
             <h2>Applications for the Fall 2023 are now open!</h2>
-          </div>
-          <div class="col text-end header-ribbon-button">
-            <a href="https://www.tamusa.edu/apply-now.html?utm_source=admissions&utm_medium=website&utm_campaign=admission-site"
+            <a href="https://apply.tamusa.edu/"
               target="_blank" class="btn btn-light">Apply Now</a>
           </div>
         </div>
@@ -74,8 +72,6 @@
       <div class="row justify-content-between">
         <div class="col-sm-12 col-md-8 text-center">
           <div class="about-video">
-            <!-- <img data-src="https://www.youtube.com/embed/u3bYc4dHob0"
-              data-bs-target="#video" class="play-video" src="./assets/about/play-about.jpg" alt=""> -->
             <iframe class="iframe" id="video" src="https://www.youtube.com/embed/u3bYc4dHob0"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -123,53 +119,101 @@
         </div>
       </div>
     </section>
-    <section class="testimonials container">
-      <h4>WHAT STUDENTS HAVE TO SAY...</h4>
-      <div class="testimonials-links">
-        <div class="imghvr-flip-diag-1">
-          <img src="./assets/testimonial/testimonials-oscarc.png">
-          <figcaption style="background-color:white;">
-            <a class="testimonials-bg"><img src="./assets/testimonial/tamusa-involved-bg.png" alt="Oscar">
-              <div class="testimonials-text">
-                <p>Being a part of the Jaguar Family means seeking to better yourself through education. I’ve always had
-                  a drive to be able to try to better the environment and with my degree from A&M-San Antonio I can do
-                  that!</p>
-                <br>
-                <p><strong>Oscar Cisneros</strong><br>Cyber-Security </p>
+    <section class="testimonials container">            
+      <h4 class="mb-4 text-center text-lg-start">WHAT OTHER JAGUARS HAVE TO SAY...</h4>
+      <div class="row g-0">
+          <div class="col-12">
+              <div id="carousel-testimonials" class="carousel slide" data-touch="true">
+                  <div class="carousel-inner row g-0 flex-nowrap">
+                      <div class="col-lg-4 bg-red position-relative carousel-item active">
+                          <div class="div-square">
+                              <div>
+                                  <a href="javascript:void(0)" class="stretched-link"></a>
+                                  <div class="carousel-box text-white h-100">
+                                      <div class="img-wrapper position-absolute top-0 start-0 w-100 h-100" >
+                                          <img class="object-fit-cover" alt="" src="./assets/bg-involved.svg"/>
+                                      </div>
+                                      <div class="position-relative">
+                                          <div class="text-center mb-3">
+                                              <img alt="" src="./assets/TESTIMONIALS/quote-white.svg"/>
+                                          </div>
+                                          <p>Being a part of the Jaguar Family means seeking to better yourself through education. I’ve always had a drive to be able to try to better the environment and with my degree from A&M-San Antonio I can do that!!</p>
+                                          <div>
+                                              <strong>Oscar Cisneros</strong><br>
+                                              <small>Cyber-Security</small>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="img-wrapper position-absolute top-0 start-0 w-100 h-100" >
+                                      <img class="object-fit-cover" alt="Oscar Cisneros - Cyber-Security" src="./assets/TESTIMONIALS/testimonials-oscarc.jpg"/>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 bg-red position-relative carousel-item">
+                          <div class="div-square">
+                              <div>
+                                  <a href="javascript:void(0)" class="stretched-link"></a>
+                                  <div class="carousel-box text-white h-100">
+                                      <div class="img-wrapper position-absolute top-0 start-0 w-100 h-100" >
+                                          <img class="object-fit-cover" alt="" src="./assets/bg-impact.svg"/>
+                                      </div>
+                                      <div class="position-relative">
+                                          <div class="text-center mb-3">
+                                              <img alt="" src="./assets/TESTIMONIALS/quote-white.svg"/>
+                                          </div>
+                                          <p>It doesn't matter where you came from or how you started. What matters is that all your hard work and dedication pays off, and becoming a Jaguar means exactly that for me.</p>
+                                          <div>
+                                              <strong>Lesly Alvarez</strong><br>
+                                              <small>EC-6 Teaching Certification</small>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="img-wrapper position-absolute top-0 start-0 w-100 h-100" >
+                                      <img class="object-fit-cover" alt="Lesly Alvarez - EC-6 Teaching Certification" src="./assets/TESTIMONIALS/testimonials-leslya.jpg"/>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 bg-red position-relative carousel-item">
+                          <div class="div-square">
+                              <div>
+                                  <a href="javascript:void(0)" class="stretched-link"></a>
+                                  <div class="carousel-box text-white h-100">
+                                      <div class="img-wrapper position-absolute top-0 start-0 w-100 h-100" >
+                                          <img class="object-fit-cover" alt="" src="./assets/bg-campus.svg"/>
+                                      </div>
+                                      <div class="position-relative">
+                                          <div class="text-center mb-3">
+                                              <img alt="" src="./assets/TESTIMONIALS/quote-white.svg"/>
+                                          </div>
+                                          <p>At the end of the day, I truly value this idea of being a professor because I’m in the best place to teach here at Texas A&M University-San Antonio.</p>
+                                          <div>
+                                              <strong>Courtney Bobb-Meilinger</strong><br>
+                                              <small>College of Arts and Sciences</small>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="img-wrapper position-absolute top-0 start-0 w-100 h-100" >
+                                      <img class="object-fit-cover" alt="Courtney Bobb-Meilinger - College of Arts and Sciences" src="./assets/TESTIMONIALS/testimonials-placeholder.jpg"/>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+                  <div class="controls row justify-content-center">
+                      <button class="btn-grey carousel-control-prev position-relative col-auto d-lg-none" type="button" data-bs-target="#carousel-testimonials" data-bs-slide="prev">
+                          <span>‹</span> <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="btn-grey carousel-control-next position-relative col-auto d-lg-none" type="button" data-bs-target="#carousel-testimonials" data-bs-slide="next">
+                          <span>›</span> <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
               </div>
-            </a>
-          </figcaption>
-        </div>
-        <div class="imghvr-flip-diag-1">
-          <img src="./assets/testimonial/testimonials-leslya.png">
-          <figcaption style="background-color:white;">
-            <a class="testimonials-bg"><img src="./assets/testimonial/tamusa-involved-bg.png" alt="Oscar">
-              <div class="testimonials-text">
-                <p>It doesn't matter where you came from or how you started. What matters is that all your hard work and
-                  dedication pays off, and becoming a Jaguar means exactly that for me. </p>
-                <br>
-                <p><strong>Lesly Alvarez</strong><br>EC-6 Teaching Certification</p>
-              </div>
-            </a>
-          </figcaption>
-        </div>
-        <div class="imghvr-flip-diag-1">
-          <img src="./assets/testimonial/testimonials-Courtney Bobb-Meilinger.png">
-          <figcaption style="background-color:white;">
-            <a class="testimonials-bg"><img src="./assets/testimonial/tamusa-involved-bg.png" alt="Oscar">
-              <div class="testimonials-text">
-                <p>At the end of the day, I truly value this idea of being a professor because I’m in the best place to
-                  teach here at Texas A&M University-San Antonio.</p>
-                <br>
-                <p><strong>Courtney Bobb-Meilinger</strong><br>College of Arts and Sciences</p>
-              </div>
-            </a>
-          </figcaption>
-        </div>
+          </div>
       </div>
     </section>
-
-
     <section class="students container">
       <div class="students-target">
         <div class="row row-cols-2 justify-content-center">
@@ -203,7 +247,7 @@
                   </p>
                 </div>
                 <div class="card-btn">
-                  <a href="https://www.tamusa.edu/apply-now.html?utm_source=admissions&utm_medium=website&utm_campaign=admission-site"
+                  <a href="https://apply.tamusa.edu"
                     target="_blank" class="btn btn-light">Apply Now
                   </a>
 
@@ -247,7 +291,7 @@
                   </p>
                 </div>
                 <div class="card-btn">
-                  <a href="https://www.tamusa.edu/apply-now.html?utm_source=admissions&utm_medium=website&utm_campaign=admission-site"
+                  <a href="https://apply.tamusa.edu"
                     target="_blank" class="btn btn-light">Apply Now
                   </a>
 
@@ -290,15 +334,13 @@
 
                 </div>
                 <div class="card-btn">
-                  <a href="https://gradcas.liaisoncas.org/apply/" target="_blank" class="btn btn-light">Apply Now
+                  <a href="https://apply.tamusa.edu" target="_blank" class="btn btn-light">Apply Now
                   </a>
 
                 </div>
               </div>
             </div>
           </div>
-
-
           <div class="col-sm-6 col-md-6">
             <div class="card card-parents">
               <div class="card-body">
@@ -443,8 +485,6 @@
                   </p>
                   <p>Marketing, BBA</p>
                 </div>
-
-
               </div>
               <div class="tab-content-view">
                 <a href="https://www.tamusa.edu/college-of-business/index.html" target="_blank">View More ›
@@ -524,11 +564,135 @@
 
       </div>
     </section>
+    <section class="passion-mobile container">
+      <h4>FOLLOW YOUR PASSION</h4>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              College of Arts & Sciences
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>BAAS Programs</p>
+              <p>
+                Biology, BA</p>
+              <p>
+                Biology, BS</p>
+              <p>
+                Communications, BA
+              </p>
+              <p>Criminology and Criminal Justice, BS
+              </p>
+              <p> Electronic Systems Engineering Technology, BS
+              </p>
+              <p>English, BA
+              </p>
+              <p>General Studies, BA
+              </p>
+              <p> History with Teacher Certification, BA
+              </p>
+              <p>Mathematics, BA</p>
+              <p>
+                Political Science, BA</p>
+              <p>
+                Psychology, BA</p>
+              <p>
+                Psychology, BS</p>
+              <p>
+                Sociology, BA</p>
+              <p>
+                Sociology, BS</p>
+              <p>
+                Spanish, BA
+              </p>
+              <p>
+                Spanish with Teaching Certification, BA</p>
+              <p>Water Resources, BS</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              College of Business
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Accounting, BBA</p>
+                  <p>Computer Information Systems Assurance and Security Concentration, BBA</p>
+                  <p>Computer Science, BS
+                  </p>
+                  <p>Cyber Security (available online)
+                  </p>
+                  <p>General Business, BBA
+                  </p>
+                  <p>Management, BBA
+                  </p>
+                  <p>Marketing, BBA</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              College of Education and Human Development
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Applied Behavior Analysis, BS
+              </p>
+              <p>Child Development, BS
+              </p>
+              <p>Human Services, BS
+              </p>
+              <p>Interdisciplinary Studies Bilingual Generalist (Grades EC-6), BS
+              </p>
+              <p>Interdisciplinary Studies Generalist (Grades 4-8), BS
+              </p>
+              <p>Interdisciplinary Studies Special Education,<br> EC-12 with Dual Certification in Generalist 7-12,
+                BS
+              </p>
+              <p>Kinesiology Exercise Science, BS</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Pre-Professional Programs
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Pre-Business
+              </p>
+              <p>Pre-Law
+              </p>
+              <p>Human Services, BS
+              </p>
+              <p>Pre-Medical
+              </p>
+              <p>Pre-Nursing
+              </p>
+              <p>Pre-Physical Therapy
+              </p>
+              <p>Pre-Veterinary Studies
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="admitted container-fluid">
       <div class="admitted-content">
-        <h4>ALREADY ADMITTED? TAKE THE NEXT STEP!</h4>
-        <p>Check out your next step in the enrollment process at the Future Jaguar Headquarters website for
-          newly-admitted students!
+        <h4>Already admitted? Congrats!</h4>
+        <p>Take the next step in the enrollment process!
         </p>
         <a href="http://www.becomeajaguar.com/admitted-students" target="_blank" class="btn btn-light">Get Started</a>
       </div>
@@ -542,7 +706,7 @@
             access to resources and support services to ensure your success!
           </p>
           <div class="paying-btn">
-            <a href="https://www.tamusa.edu/jaguar-excellence-guarantee/" target="_blank" class="btn btn-light">Learn
+            <a href="https://www.tamusa.edu/financialaid/index.html" target="_blank" class="btn btn-light">Learn
               More</a>
           </div>
         </article>
@@ -555,35 +719,37 @@
         </div>
       </div>
     </section>
-    <section class="cost container-fluid">
-      <div class="cost-content">
-        <img src="./assets/cost/tamusa-baj-badge.png" alt="Best Value en San Antonio">
-        <h4>ANNUAL ESTIMATED COST</h4>
-        <div class="cost-state">
-          <div>
-            <p><strong>$9,548</strong></p>
-            <p>IN-STATE</p>
+    <section class="cost-section">
+      <div class="container text-center">
+          <img class="icon-badge" alt="#1 Best Value in San Antonio" src="./assets/cost/tamusa-baj-badge.svg">
+          <h2 class="my-4 pb-2">
+              Annual Estimated Costs
+          </h2>
+          <div class="row justify-content-center">
+              <div class="col-xl-10 col-xxl-9">
+                  <div class="row justify-content-center">
+                      <div class="col-sm-4 mb-4">
+                          <h2 class="mb-1">$9,548</h2>
+                          <h3 class="fw-normal">IN-STATE</h3>
+                      </div>
+                      <div class="col-sm-4 mb-4">
+                          <h2 class="mb-1">$22,764</h2>
+                          <h3 class="fw-normal">OUT-OF-STATE</h3>
+                      </div>
+                      <div class="col-sm-4 mb-4">
+                          <h2 class="mb-1">$10,570</h2>
+                          <h3 class="fw-normal">ROOM &amp; BOARD</h3>
+                      </div>
+                  </div>
+                  <div class="row justify-content-center">
+                      <div class="col-sm-7 col-md-12">
+                          <a class="btn btn-red d-block d-md-inline-block me-md-2 mb-2 mb-md-0" href="https://www.tamusa.edu/financialaid/resources/cost-of-attendance.html" target="_blank">Cost of Attendence</a>
+                          <a class="btn btn-red d-block d-md-inline-block me-md-2 mb-2 mb-md-0" href="https://www.tamusa.edu/financialaid/index.html" target="_blank">Scholarships &amp; Financial Aid</a>
+                          <a class="btn btn-red d-block d-md-inline-block" href="https://www.tamusa.edu/militaryaffairs/index.html" target="_blank">Military/VA Benefits</a>    
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div>
-            <p><strong>$22,764</strong></p>
-            <p>OUT-OF-STATE</p>
-          </div>
-          <div>
-            <p><strong>$10,570</strong></p>
-            <p>ROOM & BOARD</p>
-          </div>
-        </div>
-        <div class="cost-cta">
-          <a href="https://www.tamusa.edu/financialaid/resources/cost-of-attendance.html" target="_blank"
-            class="btn btn-light">Cost of Attendance
-          </a>
-          <a href="https://www.tamusa.edu/financialaid/index.html" target="_blank" class="btn btn-light">Scholarships &
-            Financial Aid
-          </a>
-          <a href="https://www.tamusa.edu/militaryaffairs/index.html" target="_blank" class="btn btn-light">Military/VA
-            Benefits
-          </a>
-        </div>
       </div>
     </section>
     <section class="visits container">
@@ -599,37 +765,60 @@
             src="./assets/visits/tamusa-baj-sa.png" alt="Visit"></a>
       </div>
     </section>
-    <section class="live container">
-      <h4>LIVE THE JAGUAR LIFE</h4>
-      <div class="live-links">
-        <div class="imghvr-flip-diag-1">
-          <img src="./assets/live/tamusa-baj-involved.png">
-          <figcaption style="background-color:white;">
-            <a><img src="./assets/live/Frame 1.png" alt="Get Involved"></a>
-          </figcaption>
-        </div>
-        <div class="imghvr-flip-diag-1">
-          <img src="./assets/live/tamusa-baj-campus.png">
-          <figcaption style="background-color:white;"><a> <img src="./assets/live/Frame 2.png" alt="Live Campus">
-              <img src="./assets/live/Frame 2.png" alt="Live Campus">
-            </a>
-          </figcaption>
-        </div>
-        <div class="imghvr-flip-diag-1">
-          <img src="./assets/live/tamusa-baj-impact.png">
-          <figcaption style="background-color:white;">
-            <a> <img src="./assets/live/Frame 3.png" alt="Make Impact">
-            </a>
-          </figcaption>
-        </div>
+    <section class="live-campus container">
+      <h2 class="live-text">Live On Campus</h2>
+      <div class="row g-0 mx-auto text-white stats-wrapper">
+          <div class="col-lg-4 position-relative">
+              <div class="div-square bg-red">
+                  <div>
+                      <a href="javascript:void(0)" class="stretched-link"></a>
+                      <div class="text-white h-100">
+                          <div class="img-wrapper position-absolute top-0 start-0 w-100 h-100">
+                            <img class="object-fit-cover" alt="" src="./assets/LIVE THE JAGUAR LIFE/tamusa-get-involved.png">
+                          </div>
+                      </div>
+                      <div class="img-wrapper position-absolute top-0 start-0 w-100 h-100">
+                          <img class="object-fit-cover" alt="" src="./assets/LIVE THE JAGUAR LIFE/tamusa-baj-involved.jpg">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 position-relative">
+              <div class="div-square bg-grey">
+                  <div>
+                      <a href="javascript:void(0)" class="stretched-link"></a>
+                      <div class="text-white h-100">
+                          <div class="img-wrapper position-absolute top-0 start-0 w-100 h-100">
+                            <img class="object-fit-cover" alt="" src="./assets/LIVE THE JAGUAR LIFE/tamusa-live-campus.png">
+                          </div>
+                      </div>
+                      <div class="img-wrapper position-absolute top-0 start-0 w-100 h-100">
+                          <img class="object-fit-cover" alt="" src="./assets/LIVE THE JAGUAR LIFE/tamusa-baj-impact.jpg">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 position-relative">
+              <div class="div-square bg-black">
+                  <div>
+                      <a href="javascript:void(0)" class="stretched-link"></a>
+                      <div class="stats-box text-white h-100">
+                          <div class="img-wrapper position-absolute top-0 start-0 w-100 h-100">
+                            <img class="object-fit-cover" alt="" src="./assets/LIVE THE JAGUAR LIFE/tamusa-make-impact.png">
+                          </div>
+                      </div>
+                      <div class="img-wrapper position-absolute top-0 start-0 w-100 h-100">
+                          <img class="object-fit-cover" alt="" src="./assets/LIVE THE JAGUAR LIFE/tamusa-baj-campus.jpg">
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
     </section>
-    <section class="container-fluid">
+    <section class="create container-fluid">
       <div class="banner-footer">
         <h4>CREATE YOU NOW
-
         </h4>
-
         <div class="banner-footer-cta">
           <a href="https://www.tamusa.edu/financialaid/resources/cost-of-attendance.html" target="_blank"
             class="btn btn-light">Visit Campus
@@ -655,17 +844,17 @@
   </main>
   <footer class=" container-fluid">
     <div class="footer">
-      <div class="info-footer">
+      <div class="info-footer order-2">
         <p>One University Way, San Antonio, TX 78224</p>
         <a href="mailto:BeAJaguar@tamusa.edu">
           <p>BeAJaguar@tamusa.edu</p>
         </a>
         <p>210-784-1300</p>
       </div>
-      <div class="info-img">
+      <div class="info-img order-1 order-lg-3">
         <img src="./assets/tamusa-logo-footer.png" alt="Logo footer">
       </div>
-      <div class="info-footer-2">
+      <div class="info-footer-2 order-3">
         <p>A member of The Texas A&M University System</p>
         <p>© 2021 Texas A&M University-San Antonio</p>
         <a href="www.tamusa.edu">
@@ -674,11 +863,7 @@
       </div>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
-  </script>
-  <script src="./main.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>
