@@ -941,6 +941,13 @@ footer {
 .banner-footer-social a {
   text-decoration: none;
 }
+
+@media (min-width: 992px) and (max-width: 1025px)  {
+.tab-content .college {
+  padding: 30px;
+}
+}
+
 @media (min-width: 1024px) and (max-width: 1200px)  {
 
   .hero-banner-h1 {
